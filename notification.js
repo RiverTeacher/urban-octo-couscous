@@ -11,7 +11,7 @@ const checkTime = function() {
    };
    return function() {
        const currentTime = new Date();
-       const minutes = currentTime.getseconds();
+       const minutes = currentTime.getSeconds();
        if (previousMinutes !== minutes && minutes % 1 === 0) {
            previousMinutes = minutes;
            const notification = new Notification("Check!", options);
